@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 11 08:01:29 2022
+# Make data base, printed on Tue Jul 12 08:31:01 2022
 
 # Variables
 
@@ -28,6 +28,8 @@ XDG_SESSION_TYPE = x11
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
 IM_CONFIG_PHASE = 1
+# makefile (from 'Makefile', line 2)
+INCLUDES = -I./src
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -37,13 +39,15 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/martin/Desktop/MartinOs
+CURDIR := /home/martin/Desktop/MartinOS
 # makefile
 SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:51021
+_ = /usr/share/code/code
+# environment
+JOURNAL_STREAM = 8:54549
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -57,11 +61,9 @@ USERNAME = martin
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=4f991a0635c49f79b704438162cbd0eb
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
-_ = /usr/share/code/code
-# environment
-MANAGERPID = 1480
+MANAGERPID = 1448
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -73,7 +75,7 @@ PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1691,unix/ubuntu:/tmp/.ICE-unix/1691
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1654,unix/ubuntu:/tmp/.ICE-unix/1654
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -81,7 +83,7 @@ XDG_MENU_PREFIX = gnome-
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 98f316b420944a78aaadbc1769b100e6
+INVOCATION_ID = 9c1d2391f75e40e1a6a88f12ac9cacfc
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -91,17 +93,17 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 4127
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2072
 # automatic
 %F = $(notdir $%)
 # environment
 DISPLAY = :0
 # environment
-PWD = /home/martin/Desktop/MartinOs
+PWD = /home/martin/Desktop/MartinOS
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1655
+SSH_AGENT_PID = 1619
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -117,7 +119,7 @@ VSCODE_CODE_CACHE_PATH = /home/martin/.config/Code/CachedData/92d25e35d9bf1a6b16
 # environment
 LOGNAME = martin
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
@@ -143,7 +145,6 @@ USER = martin
 # makefile
 .DEFAULT_GOAL := all
 # environment
- 
 XDG_CURRENT_DESKTOP = Unity
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
@@ -176,27 +177,31 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
-DBUS_STARTER_BUS_TYPE = session
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # automatic
 ^F = $(notdir $^)
 # default
 SUFFIXES := 
+# makefile (from 'Makefile', line 3)
+FLAGS = -g -ffreestanding -falign-jumps -falign-functions -falign-labels -falign-loops -fstrength-reduce -fomit-frame-pointer -finline-functions -Wno-unused-function -fno-builtin -Werror -Wno-unused-label -Wno-cpp -Wno-unused-parameter -nostdlib -nostartfiles -nodefaultlibs -Wall -O0 -Iinc
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
 WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
 LANG = C
 # environment
-VSCODE_PID = 4127
-# environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=4f991a0635c49f79b704438162cbd0eb
+VSCODE_PID = 2072
+# makefile (from 'Makefile', line 1)
+FILES = ./build/kernel.asm.o ./build/kernel.o
 # variable set hash-table stats:
-# Load=92/1024=9%, Rehash=0, Collisions=12/120=10%
+# Load=95/1024=9%, Rehash=0, Collisions=12/124=10%
 
 # Pattern-specific Variable Values
 
@@ -204,9 +209,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=4f991a0635c49f79b704438
 
 # Directories
 
-# . (device 2053, inode 669109): 8 files, no impossibilities.
+# . (device 2053, inode 935792): 10 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -214,7 +219,7 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=4f991a0635c49f79b704438
 
 # Files
 
-all:
+all: bin/boot.bin bin/kernel.bin
 #  Command line target.
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
@@ -228,18 +233,37 @@ all:
 # automatic
 # * := 
 # automatic
-# + := 
+# + := bin/boot.bin bin/kernel.bin
 # automatic
 # | := 
 # automatic
-# < := 
+# < := bin/boot.bin
 # automatic
-# ^ := 
+# ^ := bin/boot.bin bin/kernel.bin
 # automatic
-# ? := 
+# ? := bin/boot.bin bin/kernel.bin
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
-#  recipe to execute (from 'Makefile', line 2):
+#  recipe to execute (from 'Makefile', line 5):
+	rm -rf ./bin/os.bin
+	dd if=./bin/boot.bin >> ./bin/os.bin
+	dd if=./bin/kernel.bin >> ./bin/os.bin
+	dd if=/dev/zero bs=512 count=100 >> ./bin/os.bin
+	
+
+# Not a target:
+src/boot/boot.asm:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 06:44:06.425953534
+#  File has been updated.
+#  Successfully updated.
+
+bin/boot.bin: src/boot/boot.asm
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-12 08:23:33.534474304
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 16):
 	nasm -f bin ./src/boot/boot.asm -o ./bin/boot.bin
 
 # Not a target:
@@ -251,9 +275,42 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-11 08:00:18.807769214
+#  Last modified 2022-07-12 08:17:53.962960448
 #  File has been updated.
 #  Successfully updated.
+ 
+
+build/kernel.asm.o: src/kernel.asm
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-12 08:23:33.538474259
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 19):
+	nasm -f elf -g ./src/kernel.asm -o ./build/kernel.asm.o
+
+bin/kernel.bin: build/kernel.asm.o build/kernel.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-12 08:23:33.554474081
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 12):
+	i686-elf-ld -g -relocatable ${FILES} -o ./build/kernelfull.o
+	i686-elf-gcc ${FLAGS}  -T ./src/linker.ld -o ./bin/kernel.bin -ffreestanding -O0 -nostdlib ./build/kernelfull.o
+
+# Not a target:
+src/kernel.asm:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 08:23:26.910548381
+#  File has been updated.
+#  Successfully updated.
+
+build/kernel.o: src/kernel.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-12 08:23:33.550474125
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 22):
+	i686-elf-gcc ${INCLUDES} ${FLAGS} -std=gnu99 -c ./src/kernel.c -o ./build/kernel.o
 
 # Not a target:
 .DEFAULT:
@@ -265,23 +322,34 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 4):
+#  recipe to execute (from 'Makefile', line 24):
+	rm -rf ./bin/kernel.bin
+	rm -rf ./bin/os.bin
 	rm -rf ./bin/boot.bin
+	rm -rf ${FILES}
+	rm -rf ./build/kernelfull.o
+
+# Not a target:
+src/kernel.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-12 08:19:15.961726044
+#  File has been updated.
+#  Successfully updated.
 
 # files hash-table stats:
-# Load=5/1024=0%, Rehash=0, Collisions=0/17=0%
+# Load=12/1024=1%, Rehash=0, Collisions=0/35=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 14 / storage = 110 B / avg = 7 B
-# current buf: size = 8162 B / used = 110 B / count = 14 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 232 B / avg = 10 B
+# current buf: size = 8162 B / used = 232 B / count = 23 / avg = 10 B
 
-# strcache performance: lookups = 22 / hit rate = 36%
+# strcache performance: lookups = 39 / hit rate = 41%
 # hash-table stats:
-# Load=14/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Mon Jul 11 08:01:29 2022
+# Load=23/8192=0%, Rehash=0, Collisions=1/39=3%
+# Finished Make data base on Tue Jul 12 08:31:01 2022
 
  
